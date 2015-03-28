@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>jquery session timer</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- required -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="../src/jquery.sessiontimer.js"></script>
+	<!-- required -->
+	
+	<!-- optional -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- optional -->
+	
+	<!-- if bootstrap loaded; no need  -->
+	<link href="../src/jquery.sessiontimer.css" rel="stylesheet">
+	<!-- if bootstrap loaded; no need  -->
+
+	<style type="text/css">
+		body { margin: 0 15px; }
+		pre { font-family: monospace; font-size: 12px;  }
+		h2 { font-family: arial }
+	</style>
+	
+	<script language="javascript">
+		$(document).ready(function () {
+			$.sessiontimer({
+				session_period : 70,
+				warning_sec : 60,
+				url : {
+					signout : 'http-your-logout',
+					keepalive : '?'
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+<h2>jquery.sessiontimer</h2>
+<pre>
+Example:
+
+$(document).ready(function () {
+
+	$.sessiontimer({
+		session_period : 70,
+		warning_sec : 60,
+		url : {
+			signout : 'http-your-logout-url',
+			keepalive : '?'
+		}
+	});
+
+});
+</pre>
+</body>
+
+</html>

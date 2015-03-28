@@ -1,0 +1,102 @@
+/* if bootstrap framework loaded; no need this document */
+
+.session-timeout-wrapper {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	display: none;
+}
+
+.session-timeout-dialog {
+	background:#fff;
+	width:290px;
+	height:195px;
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	border:5px solid #fff;
+	position:relative;
+	margin: 30px auto;
+	-moz-box-shadow:1px 1px 10px #333;
+	-webkit-box-shadow:1px 1px 10px #333;
+	box-shadow:1px 1px 10px #333;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	z-index:9999;
+}
+.session-timeout-dialog > div {
+	width: 270px;
+	margin-left: -5px;
+}
+
+.session-timeout-dialog .header { 
+	font-size: 18px;
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.session-timeout-dialog .body {
+	padding: 5px 15px 15px 15px;
+	line-height: 20px;
+}
+.session-timeout-dialog .body span {
+	float: right;
+	margin-right: 10px
+}
+
+.session-timeout-dialog .footer { 
+	padding: 15px;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+.session-timeout-dialog .footer button {
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	margin-bottom: 0;
+	padding: 6px 10px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.session-timeout-dialog .footer #session-timeout-dialog-logout {
+	background-color: #fff;
+	border-color: #ccc;
+	color: #333;
+}
+.session-timeout-dialog .footer #session-timeout-dialog-logout:hover {
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+.session-timeout-dialog .footer #session-timeout-dialog-keepalive {
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	color: #fff;
+	margin-left: 5px;
+}
+.session-timeout-dialog .footer #session-timeout-dialog-keepalive:hover {
+	background-color: #286090;
+	border-color: #204d74;
+}
+
+.session-timeout-bg {
+	background:#000;
+	position:fixed;
+	overflow: hidden;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	opacity: 0.50;
+	z-index: 9000;
+}
